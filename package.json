@@ -1,0 +1,30 @@
+{
+  "name": "ironreach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "packageManager": "npm@11.4.2",
+  "workspaces": [
+    "apps/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willy0483/Ironreach.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/willy0483/Ironreach/issues"
+  },
+  "homepage": "https://github.com/willy0483/Ironreach#readme",
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  }
+}
