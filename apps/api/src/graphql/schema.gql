@@ -18,6 +18,11 @@ type AuthPayload {
   refreshToken: String!
 }
 
+type RefreshPayload {
+  accessToken: String!
+  refreshToken: String!
+}
+
 type Query {
   hello: String!
 }
@@ -25,6 +30,7 @@ type Query {
 type Mutation {
   createUser(createUserInput: CreateUserInput!): User!
   signIn(signInInput: SignInInput!): AuthPayload!
+  refreshTokens: RefreshPayload!
 }
 
 input CreateUserInput {

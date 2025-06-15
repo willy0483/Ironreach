@@ -82,11 +82,9 @@ export class AuthService {
     return currentUser;
   }
 
-  async refreshToken(userId: number, name: string) {
+  async refreshToken(userId: number) {
     const { accessToken, refreshToken } = await this.generateTokens(userId);
     return {
-      id: userId,
-      name: name,
       accessToken,
       refreshToken,
     };

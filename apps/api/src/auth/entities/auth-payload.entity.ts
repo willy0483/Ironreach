@@ -17,3 +17,12 @@ export class AuthPayload {
   @Field()
   refreshToken: string;
 }
+
+@ObjectType()
+export class RefreshPayload {
+  @Field()
+  accessToken: string;
+
+  @Field()
+  refreshToken: string;
+}
