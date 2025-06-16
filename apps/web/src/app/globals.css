@@ -3,6 +3,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-ale: #d3a85e; /* Golden ale accent */
+  --color-hearth: #1e1b16; /* Main dark background */
+  --color-cask: #2a2620; /* Surface / card */
+  --color-oak: #332f28; /* Sidebar / panel */
+  --color-smoke: #3e3a34; /* Borders / low contrast */
+  --color-parchment: #e2dfd9; /* Light text */
+  --color-ember: #b4462a; /* Alert / error (warm red) */
+  --color-moss: #4e7358; /* Success (natural green) */
+  --color-ghost: #9c9388; /* Muted text */
+  --color-moonlight: #7a89a1; /* Cool secondary accent */
+
+  --font-montserrat: var(--font-montserrat);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
